@@ -1,0 +1,16 @@
+.squareDiv {
+    border-style: solid;
+    border-color: green;
+    margin: 2;
+    padding: 0;
+    width: 2vw;
+}
+
+.rowDiv {
+    border-style: double;
+    border-color: red;
+    display: flex;
+    justify-content: center;
+    height: 2.5vw;
+    width: auto;
+}

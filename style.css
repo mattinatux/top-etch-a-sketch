@@ -1,20 +1,27 @@
 html {
     background-color: lightslategray;
 }
-.squareDiv {
+
+#gridContainer {
     border-style: solid;
-    border-color: green;
-    margin: 2;
+    border-color: red;
+    width: 100%;
+}
+
+.squareDiv {
+    /* border-style: solid; */
+    /* border-color: green; */
+    margin: 0;
     padding: 0;
     width: 2vw;
 }
 
 .rowDiv {
-    border-style: double;
-    border-color: red;
+    /* border-style: double; */
+    /* border-color: red; */
     display: flex;
     justify-content: center;
-    height: 2.5vw;
+    height: 2vw;
     width: auto;
 }
 

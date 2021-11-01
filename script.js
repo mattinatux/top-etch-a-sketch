@@ -53,14 +53,14 @@ function resetEtch () {
     // Prompt the user for how big they want this new grid to be
     // defaults to 16 in createGrid function if no input provided
     let userEntry = Number(prompt(`I'll create a new square grid for you.
-How many squares wide and tall would you like it to be? (Max 100)`));
+How many squares wide and tall would you like it to be? (Max 100)`, "16"));
 
     // numerical data validation
     while ( (userEntry < 1) || (userEntry > 100) ) {
         alert(`Hey! You entered ${userEntry}. That is
 either not a negative number, or greater than 100!`);
 
-    userEntry = prompt('Try again! Pick a size, 1-100.');
+    userEntry = prompt('Try again! Pick a size, 1-100.', "16");
     }
 
     if (!Number(userEntry) || (userEntry == null)) {

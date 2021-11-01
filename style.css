@@ -1,3 +1,6 @@
+html {
+    background-color: lightslategray;
+}
 .squareDiv {
     border-style: solid;
     border-color: green;
@@ -13,4 +16,19 @@
     justify-content: center;
     height: 2.5vw;
     width: auto;
+}
+
+.etched {
+    background-color: darkslategray;
+}
+
+button#resetButton {
+    max-width: 100%;
+    min-width: 20%;
+    background-color: lightslategray;
+    border-color: darkslategray;
+    border-style: solid;
+    font-weight: 900;
+    margin: auto;
+    display: block;
 }

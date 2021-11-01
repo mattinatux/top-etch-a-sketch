@@ -19,7 +19,6 @@ allRows.forEach( (row) => {
     for (i = 0; i < numDivsPerAxis; i++) {
         const squareDiv = document.createElement('div');
         squareDiv.classList.add('squareDiv');
-        squareDiv.classList.add('flex-horizontal');
         row.appendChild(squareDiv);
     }
 });
@@ -29,5 +28,23 @@ const allSquares = document.querySelectorAll('.squareDiv');
 
 // Entering the forEach loop on ALL SQUARES (for event listeners)
 allSquares.forEach( (square) => {
-    console.log("square.addEventListener()")
+    square.addEventListener('mouseenter', etched);
 });
+
+// function used to etch squares on mouseenter
+function etched (e) {
+    e.target.classList.add('etched');
+}
+
+// select the reset button on the page
+const resetButton = document.getElementById('resetButton');
+
+// add event listener for reset button click
+resetButton.addEventListener('click', resetEtch);
+
+// reset function to run when reset button is clicked
+function resetEtch () {
+    allSquares.forEach( (square) => {
+        square.classList.remove('etched');
+    });
+}
